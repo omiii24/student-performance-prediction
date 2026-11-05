@@ -108,7 +108,7 @@ input_data = pd.DataFrame([{
 }])
 
 # Add engineered features used during training
-input_data["attendance_score"] = 1 - (input_data["absences"] / 93)
+input_data["attendance_score"] = 1 - (input_data["absences"] / 75)
 input_data["failure_impact"] = input_data["failures"] * input_data["absences"]
 input_data["study_support_score"] = (
     input_data["studytime"]
