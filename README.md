@@ -25,10 +25,15 @@ UCI Student Performance dataset (`student-mat.csv`), 395 students, 30 input attr
 
 | Model | Metric | Score |
 |-------|--------|-------|
-| Grade model (regression) | MAE | XX |
-| Grade model (regression) | R² | XX |
-| Risk model (classification) | Accuracy | XX |
-| Risk model (classification) | F1-score | XX |
+| Grade model (Random Forest Regressor) | MAE | 3.21 |
+| Grade model (Random Forest Regressor) | RMSE | 4.22 |
+| Grade model (Random Forest Regressor) | R² | 0.12 |
+| Risk model (Random Forest Classifier) | Accuracy | 0.52 |
+| Risk model (Random Forest Classifier) | 5-fold CV weighted F1 | 0.50 |
+
+Evaluated on a stratified 80/20 train-test split (79 test students). Risk levels are derived from the final grade: Low (≥ 15), Medium (10-14), High (< 10).
+
+**Note on performance:** G1 and G2 (earlier period grades) are deliberately excluded to avoid target leakage, so the app works as an early-warning system using only background and behavioural data. This makes the task much harder than predicting from earlier grades, so scores are modest on this small dataset (395 students).
 
 ## Project Structure
 
