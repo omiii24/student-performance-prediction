@@ -1,5 +1,7 @@
 # 🎓 Student Performance Prediction System
 
+🔗 **Live Demo:** https://student-performance-prediction-dwpguteaki3iivm9xa9fim.streamlit.app/
+
 A machine learning web app that predicts a student's final grade (out of 20) and academic risk level (Low / Medium / High) from study habits, attendance, family background and school data. Built with Python, scikit-learn and Streamlit.
 
 ## Features
